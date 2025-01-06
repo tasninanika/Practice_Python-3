@@ -16,6 +16,7 @@ for i in range(1, 31, 1):
     else:
         print(i)
 
+# another way
 i = 1        
 while(i < 31):
     if i % 3 == 0:
