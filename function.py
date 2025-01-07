@@ -12,12 +12,16 @@ def gretting():
 gretting()
 
 
+
+
 # dynamic function
 
 def my_print(x):
     print(x)
 
 my_print('Jarin')
+
+
 
 
 # practice
@@ -28,4 +32,29 @@ def my_range(start_num, end_num, increment_num):
         start_num += 1
 
 my_range(0, 20, 1)
+
+
+
+
+# calculator
+
+def calculator(num1, num2, operation):
+  if operation == "Add":
+    print(num1 + num2)
+  elif operation == "Sub":
+    print(num1 - num2)
+calculator(10, 5, "Add")
+
+
+
+
+# another
+def calculator(num1, num2, operation):
+  if operation == "Add":
+    cal=(num1 + num2)
+  elif operation == "Sub":
+    cal=(num1 - num2)
+  return cal
     
+    
+number = calculator(10, 5, "Add")
