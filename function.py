@@ -97,7 +97,25 @@ def multi_num_sum(*numbers):
 
 multi_num_sum(10, 10, 10)
 print(total)
-        
+
+
+def calculator(*numbers, operation):
+  global total, sub
+  if operation == "Add":
+      total = 0
+      for i in numbers:
+          total += i
+
+  elif operation == "Sub":
+       sub = 0
+       for i in numbers:
+           sub -= i
     
+  return total, sub 
+
+
+number = calculator(10, 5, 10, operation = "Sub")
+print(total)        
+print(sub)    
 
 
