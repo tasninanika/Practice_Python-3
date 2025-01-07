@@ -100,22 +100,35 @@ print(total)
 
 
 def calculator(*numbers, operation):
-  global total, sub
   if operation == "Add":
       total = 0
       for i in numbers:
           total += i
+      return total
 
   elif operation == "Sub":
        sub = 0
        for i in numbers:
            sub -= i
-    
-  return total, sub 
+           if(sub < 0):
+               sub = 0
+       return sub
+  elif operation == "Mul":
+       mul = 1
+       for i in numbers:
+           mul *= i
+       return mul
+  elif operation == "Div":
+       div = 1
+       for i in numbers:
+           div /= i
+       return div
+        
+  return total, sub, mul, div 
 
 
-number = calculator(10, 5, 10, operation = "Sub")
-print(total)        
-print(sub)    
+number = calculator(10, 5, 10, operation = "Mul")
+print(number)        
+   
 
 
