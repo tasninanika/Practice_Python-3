@@ -60,6 +60,9 @@ def calculator(num1, num2, operation):
     
 number = calculator(10, 5, "Add")
 
+
+
+
 # globally variable declaration
 
 def calculator(num1, num2, operation):
@@ -73,5 +76,28 @@ def calculator(num1, num2, operation):
 number = calculator(10, 5, "Add")
 print(cal)    
 
+
+
+
+# multiple numbers
+
+def multi_number(*numbers):
+    print(numbers)
+
+multi_number(11, 13, 12)
+
+
+# sum of multiple numbers
+def multi_num_sum(*numbers):
+    global total
+    total = 0
+    for i in numbers:
+        total += i
+    return total
+
+multi_num_sum(10, 10, 10)
+print(total)
+        
+    
 
 
