@@ -124,7 +124,6 @@ def calculator(*numbers, operation):
            div /= i
        return div
         
-  return total, sub, mul, div 
 
 
 number = calculator(10, 5, 10, operation = "Mul")
