@@ -48,7 +48,8 @@ calculator(10, 5, "Add")
 
 
 
-# another
+# to return value
+
 def calculator(num1, num2, operation):
   if operation == "Add":
     cal=(num1 + num2)
@@ -58,3 +59,18 @@ def calculator(num1, num2, operation):
     
     
 number = calculator(10, 5, "Add")
+
+# globally variable declaration
+
+def calculator(num1, num2, operation):
+      global cal
+      if operation == "Add":
+        cal=(num1 + num2)
+      elif operation == "Sub":
+        cal=(num1 - num2)
+      return cal
+
+print(cal)    
+number = calculator(10, 5, "Add")
+
+
