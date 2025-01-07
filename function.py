@@ -18,3 +18,14 @@ def my_print(x):
     print(x)
 
 my_print('Jarin')
+
+
+# practice
+
+def my_range(start_num, end_num, increment_num):
+    while start_num <= end_num:
+        print(start_num)
+        start_num += 1
+
+my_range(0, 20, 1)
+    
