@@ -70,7 +70,8 @@ def calculator(num1, num2, operation):
         cal=(num1 - num2)
       return cal
 
-print(cal)    
 number = calculator(10, 5, "Add")
+print(cal)    
+
 
 
