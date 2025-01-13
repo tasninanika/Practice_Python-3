@@ -25,12 +25,12 @@ def calculator(*numbers, operation):
            mul *= i
        return mul
   elif operation == "Div":
-       div = 1
-       for i in numbers:
+       div = numbers[0]
+       for i in numbers[1:]:
            div /= i
        return div
         
 
 
-number = calculator(10, 5, 10, operation = "Sub")
+number = calculator(10, 5, 10, operation = "Div")
 print(number)   
