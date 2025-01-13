@@ -99,35 +99,7 @@ multi_num_sum(10, 10, 10)
 print(total)
 
 
-def calculator(*numbers, operation):
-  if operation == "Add":
-      total = 0
-      for i in numbers:
-          total += i
-      return total
-
-  elif operation == "Sub":
-       sub = 0
-       for i in numbers:
-           sub -= i
-           if(sub < 0):
-               sub = 0
-       return sub
-  elif operation == "Mul":
-       mul = 1
-       for i in numbers:
-           mul *= i
-       return mul
-  elif operation == "Div":
-       div = 1
-       for i in numbers:
-           div /= i
-       return div
-        
-
-
-number = calculator(10, 5, 10, operation = "Mul")
-print(number)        
+     
    
 
 
