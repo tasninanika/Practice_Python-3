@@ -13,9 +13,9 @@ def calculator(*numbers, operation):
       return total
 
   elif operation == "Sub":
-       sub = 0
-       for i in numbers:
-           sub -= i
+       sub = numbers[0]
+       for i in numbers[1:]:
+           sub = sub - i
            if(sub < 0):
                sub = 0
        return sub
@@ -32,5 +32,5 @@ def calculator(*numbers, operation):
         
 
 
-number = calculator(10, 5, 10, operation = "Mul")
+number = calculator(10, 5, 10, operation = "Sub")
 print(number)   
